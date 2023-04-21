@@ -20,30 +20,36 @@ In XAML, elements can be self-closing.
 ```
 <Button></Button>	
 ```
-
-<Button/>	-- Self-closing element
-
+-- Self-closing element
+```
+<Button/>	
+```
 
 Property Syntax vs Attribute Syntax vs Content Syntax vs Collection Syntax
 -----------------------------------
-
+```
 <Button Content="xyz"></Button>		-- Attribute Syntax	: used for simple content
-
+```
+```
 <Button>
 	<Button.Content>
 		xys							-- Property Syntax	: Use for complex content
 	</Button.Content>
 </Button>
-	
-<Button>xyz</Button>				-- Content Syntax	: Things inside an empty element are put on its default value, in this case 'content' for button
+```
 
+```
+<Button>xyz</Button>				-- Content Syntax	: Things inside an empty element are put on its default value, in this case 'content' for ```
+```
+
+```
 <StackPanel>
 	<StackPanel.Children>			-- Collection Syntax	: Elements inside are added to a collection out of sight
 	<TextBlock/>
 	<Button/>
 	</StackPanel.Children>
 <StackPanel/>
-
+```
 
 WPF Layout Panels
 -----------------
