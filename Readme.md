@@ -20,7 +20,9 @@ In XAML, elements can be self-closing.
 ```
 <Button></Button>	
 ```
+
 -- Self-closing element
+
 ```
 <Button/>	
 ```
