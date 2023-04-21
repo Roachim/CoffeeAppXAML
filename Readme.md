@@ -61,6 +61,8 @@ StackPanel	-- Primarily used for stuff like several buttons in a row or somethin
 
 Grids		--Primarily used to arrange items in the window, both on larger and smaller scales
 Example:
+
+```
 <Grid>
 	<Grid.RowDefinitions>		-- This Grid has 2 rows now
 		<RowDefinition Height="*"/>		- This row will take as much height as possible, 2 of these will share the space equally. This is also the default value.
@@ -75,12 +77,16 @@ Example:
 	<Rectangle Fill="LightBlue"
 	Grid.Column="1" Grid.Row="1"/>	-- Grids are 0 based, so this would put the Rectangle at the second Row and second column. Otherwise all item will be put at first column and row.
 </Grid>
+```
 
+```
 <Grid ShowGridLines="True"></Grid> use this to see grid without items
+```
 
 Canvas		-- Primarily used for design and not for UI elements like text, buttons or other
 Example:
 
+```
 <Canvas>
 	<Rectangle Fill="LightBlue"		-- Items added later will be shown on top. XAML is read read top to bottom and will overlap acordingly
 	Height="50" Width="50"
@@ -88,4 +94,4 @@ Example:
 	Canvas.Top="100"		-- Pushed 100px from the top
 	Panel.ZIndex="1"/>		-- This can be used to move the item to a specific overlap		
 </Canvas>
-
+```
