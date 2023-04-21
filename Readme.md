@@ -16,7 +16,10 @@ https://learn.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-7.0
 
 In XAML, elements can be self-closing.
 -------------------------------------
-<Button></Button>	-- Normal closed element
+-- Normal closed element
+```
+<Button></Button>	
+```
 
 <Button/>	-- Self-closing element
 
